@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color guesser</title>
+  </head>
+  <body>
+    <header>
+      <h1>Color guesser</h1>
+    </header>
+
+    <div class="column-container">
+      <div class="pickers">
+        <input id="color-choice" class="red" type="range" min="1" max="255">
+        <input id="color-choice" class="green" type="range" min="1" max="255">
+        <input id="color-choice" class="blue" type="range" min="1" max="255">
+        <button id="random">Get random color</button>
+      </div>
+
+      <div class="column">
+        <div id="color" class="color"><h3 id="color-text" class="color-text"></h3></div>
+      </div>
+    </div>
+    
+    <div class="column-container2">
+      <div class="column">
+        <h2>Sample of color catagorisation</h2>
+        <div class="container">
+          <div class="cube">
+            <canvas class="back face" id="canvas9"></canvas>
+            <canvas class="top face" id="canvas1"></canvas>
+            <canvas class="left face" id="canvas5"></canvas>
+            <canvas class="front face" id="canvas3"></canvas>
+            <canvas class="right face" id="canvas11"></canvas>
+            <canvas class="bottom face" id="canvas7"></canvas>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <h2>True color comparison</h2>
+        <div class="container">
+          <div class="cube">
+            <canvas class="back face" id="canvas10"></canvas>
+            <canvas class="top face" id="canvas2"></canvas>
+            <canvas class="left face" id="canvas6"></canvas>
+            <canvas class="front face" id="canvas4"></canvas>
+            <canvas class="right face" id="canvas12"></canvas>
+            <canvas class="bottom face" id="canvas8"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
